@@ -12,6 +12,6 @@ public class BuildContext : FrostingContext
     public BuildContext(ICakeContext context)
         : base(context)
     {
-        _buildType = context.Argument("configuration", Build.BuildType.Debug);
+        _buildType = context.Argument(nameof(BuildType), Build.BuildType.Debug);
     }
 }

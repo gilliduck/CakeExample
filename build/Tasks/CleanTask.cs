@@ -8,6 +8,6 @@ public sealed class CleanTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.CleanDirectory($"{context.SolutionPath}/CakeTest.ConsoleApp/bin/{context.MsBuildConfiguration}");
+        context.CleanDirectory($"{context.SolutionPath}/CakeTest.ConsoleApp/bin/{context.BuildType}");
     }
 }

@@ -12,7 +12,7 @@ public sealed class TestTask : FrostingTask<BuildContext>
     {
         context.DotNetTest($"{context.SolutionPath}/CakeTest.sln", new DotNetTestSettings
         {
-            Configuration = context.MsBuildConfiguration,
+            Configuration = context.BuildType,
             NoBuild = true
         });
     }

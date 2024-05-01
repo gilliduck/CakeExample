@@ -1,15 +1,17 @@
+using Build;
 using Cake.Common;
 using Cake.Core;
 using Cake.Frosting;
 
 public class BuildContext : FrostingContext
 {
-    public string MsBuildConfiguration { get; set; }
+    private readonly BuildType _buildType;
+    public string BuildType => _buildType.ToString();
     public string SolutionPath => "../src/CakeTest";
 
     public BuildContext(ICakeContext context)
         : base(context)
     {
-        MsBuildConfiguration = context.Argument("configuration", "Release");
+        _buildType = context.Argument("configuration", Build.BuildType.Debug);
     }
 }

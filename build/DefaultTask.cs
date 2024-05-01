@@ -1,7 +1,7 @@
+using Build;
 using Cake.Frosting;
 
-[TaskName("Default")]
-[IsDependentOn(typeof(WorldTask))]
-public class DefaultTask : FrostingTask
+[IsDependentOn(typeof(TestTask))]
+public sealed class Default : FrostingTask
 {
 }

@@ -1,7 +1,7 @@
 ﻿using Cake.Common.IO;
 using Cake.Frosting;
 
-namespace Build;
+namespace Build.Tasks;
 
 [TaskName("Clean")]
 public sealed class CleanTask : FrostingTask<BuildContext>

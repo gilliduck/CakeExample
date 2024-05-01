@@ -1,4 +1,4 @@
-using Build;
+using Build.Tasks;
 using Cake.Frosting;
 
 [IsDependentOn(typeof(TestTask))]

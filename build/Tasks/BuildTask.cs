@@ -2,7 +2,7 @@
 using Cake.Common.Tools.DotNet.Build;
 using Cake.Frosting;
 
-namespace Build;
+namespace Build.Tasks;
 
 [TaskName("Build")]
 [IsDependentOn(typeof(CleanTask))]

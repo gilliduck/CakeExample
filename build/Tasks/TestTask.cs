@@ -2,7 +2,7 @@
 using Cake.Common.Tools.DotNet.Test;
 using Cake.Frosting;
 
-namespace Build;
+namespace Build.Tasks;
 
 [TaskName("Test")]
 [IsDependentOn(typeof(BuildTask))]
